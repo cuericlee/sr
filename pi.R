@@ -1,6 +1,8 @@
 library(SparkR)
 
-args <- commandArgs(trailing = TRUE)
+#args <- commandArgs(trailing = TRUE)
+
+args <- c('local', 10)
 
 if (length(args) < 1) {
   print("Usage: pi <master> [<slices>]")
